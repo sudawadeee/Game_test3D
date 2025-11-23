@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6ucx63k4bxw0"]
+
+[ext_resource type="PackedScene" uid="uid://dtjvjdjl8cs6e" path="res://models/flag.glb" id="1_3pxne"]
+[ext_resource type="Script" uid="uid://cri2momyjdavc" path="res://opject_new/flag.gd" id="2_7ao63"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7ao63"]
+height = 1.2832
+radius = 0.19043
+
+[node name="flag" instance=ExtResource("1_3pxne")]
+script = ExtResource("2_7ao63")
+
+[node name="Area3D" type="Area3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.641602, 0)
+shape = SubResource("CylinderShape3D_7ao63")
+
+[node name="GlowLight" type="OmniLight3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.221135, 0.194856, 0.141737)
+light_color = Color(1.23215e-05, 0.673525, 0.859235, 1)
+light_energy = 10.0
+omni_range = 3.0

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://phxyllxtppvv"]
+
+[ext_resource type="PackedScene" uid="uid://ho63sn0v82b7" path="res://Models_new/Fence (1).glb" id="1_gcm2o"]
+
+[node name="Fence_2" instance=ExtResource("1_gcm2o")]
+
+[node name="Fence2_Cube_024" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.53139)

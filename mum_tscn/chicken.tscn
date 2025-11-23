@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3nvxouvqsikg"]
+
+[ext_resource type="PackedScene" uid="uid://baetneay3xkxl" path="res://mum_model/Chicken.glb" id="1_35are"]
+
+[node name="Chicken" instance=ExtResource("1_35are")]
+transform = Transform3D(0.003, 0, 0, 0, 0.003, 0, 0, 0, 0.003, 0, 0, 0)

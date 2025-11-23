@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbhx852epw46w"]
+
+[ext_resource type="PackedScene" uid="uid://gk4qsfw4yauj" path="res://Models_new/Container Small.glb" id="1_q0u0i"]
+
+[node name="BoxSmall" instance=ExtResource("1_q0u0i")]

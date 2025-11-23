@@ -1,0 +1,46 @@
+# Godot-specific
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Godot 4.x Editor Cache and Temporary Files
+*.godot/
+*.tmp
+*.import
+*.gen.*
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python / VSCode / Other Tools (ถ้ามี)
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.log
+
+# Builds / Exports
+bin/
+build/
+dist/
+export/
+*.exe
+*.aab
+*.zip
+*.tar.gz
+
+# Backups
+*.bak
+*.old
+*.orig
+
+# Godot Mono (C# projects)
+.mono/
+data_*/
+obj/
+*.csproj
+*.sln
+*.userprefs

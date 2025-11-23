@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://x1yxn1h1bvvv"]
+
+[ext_resource type="PackedScene" uid="uid://bhn76jb8n0omh" path="res://mum_model/Grass Platform.glb" id="1_2t28x"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2t28x"]
+albedo_color = Color(0.48, 0.3708, 0.0432, 1)
+
+[node name="Grass Platform" instance=ExtResource("1_2t28x")]
+transform = Transform3D(10, 0, 0, 0, 4.17984, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="GrassPlatform_Cylinder_001" parent="." index="0"]
+transform = Transform3D(3, 0, 0, 0, 1.63711, 0, 0, 0, 3, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_2t28x")
+surface_material_override/1 = SubResource("StandardMaterial3D_2t28x")
+
+[node name="CollisionShape3D" parent="GrassPlatform_Cylinder_001/StaticBody3D" index="0"]
+debug_color = Color(0, 0.637527, 0.3909, 0.42)
