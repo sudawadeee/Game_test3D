@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpbgvfwa46358"]
+
+[ext_resource type="PackedScene" uid="uid://cxl0hnq152815" path="res://Models_new/Crate 1.glb" id="1_xtxo4"]
+
+[node name="boxCrate" instance=ExtResource("1_xtxo4")]

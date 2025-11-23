@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://clyfv0hacvvml"]
+
+[ext_resource type="PackedScene" uid="uid://d8583cos14ny" path="res://mum_model/Hen.glb" id="1_a8a6y"]
+
+[node name="Hen" instance=ExtResource("1_a8a6y")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)

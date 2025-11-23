@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://br66uhieswkg2"]
+
+[ext_resource type="Script" uid="uid://dytcqq0807baq" path="res://checkpoint.gd" id="1_luqgl"]
+[ext_resource type="AudioStream" uid="uid://6adklbred8fs" path="res://sounds/mixkit-retro-game-notification-212.wav" id="2_mhlks"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_njsvn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_luqgl"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r6hke"]
+material = SubResource("StandardMaterial3D_luqgl")
+
+[node name="Checkpoint" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_luqgl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_njsvn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("BoxMesh_r6hke")
+
+[node name="SoundCheckpoint" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_mhlks")

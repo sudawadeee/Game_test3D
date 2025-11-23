@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dorc5tlqcqevx"]
+
+[ext_resource type="PackedScene" uid="uid://dbk7pxkfdmwyg" path="res://mum_model/vegeteble.fbx" id="1_a61kf"]
+
+[node name="vegeteble" instance=ExtResource("1_a61kf")]

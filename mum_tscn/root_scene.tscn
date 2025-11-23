@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn6jf75odkhpn"]
+
+[ext_resource type="PackedScene" uid="uid://bp022avjfy03r" path="res://mum_model/Bush with Flowers.glb" id="1_7ad6c"]
+
+[node name="Root Scene" instance=ExtResource("1_7ad6c")]

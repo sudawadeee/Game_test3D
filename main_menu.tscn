@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj362ff15mcfq"]
+
+[ext_resource type="Script" uid="uid://bwduc7im4kic" path="res://scenes/main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://drof8yr7h7d65" path="res://mum_model/ไม่มีชื่อ (1920 x 1024 px).png" id="2_jix8l"]
+[ext_resource type="FontFile" uid="uid://bnkmhececypy7" path="res://ArunSerB.ttf" id="3_fu7sn"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_7vrkn")
+
+[node name="Cute-halloween-town-anime-hkh0Diq2i0Gykpz3" type="Sprite2D" parent="."]
+position = Vector2(642.75, 363.62)
+scale = Vector2(0.763802, 0.713633)
+texture = ExtResource("2_jix8l")
+
+[node name="title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 97.0
+offset_right = 1079.0
+offset_bottom = 243.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("3_fu7sn")
+theme_override_font_sizes/font_size = 120
+text = " แบบทดสอบหลุมพึ่งพิง"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 571.0
+offset_top = 321.0
+offset_right = 724.0
+offset_bottom = 416.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_fu7sn")
+theme_override_font_sizes/font_size = 60
+text = "เริ่มเกม"
+
+[node name="QuitBuitton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 459.0
+offset_right = 740.0
+offset_bottom = 554.0
+theme_override_fonts/font = ExtResource("3_fu7sn")
+theme_override_font_sizes/font_size = 60
+text = "ออกเกม"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitBuitton" to="." method="_on_quit_buitton_pressed"]

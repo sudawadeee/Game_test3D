@@ -1,0 +1,15 @@
+MeshInstance3D
+OmniLight3D
+Label
+HBoxContainer
+Control
+Button
+Panel
+HSlider
+Window
+CheckBox
+AudioStreamPlayer
+AudioStreamPlayer2D
+AudioStreamPlayer3D
+Timer
+VBoxContainer

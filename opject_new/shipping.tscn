@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbvhtaef5ooa"]
+
+[ext_resource type="PackedScene" uid="uid://g076v3hndo7a" path="res://Models_new/Shipping Container.glb" id="1_dr3qj"]
+
+[node name="shipping" instance=ExtResource("1_dr3qj")]
+
+[node name="CollisionShape3D" parent="RootNode/Container_Long/StaticBody3D" index="0"]
+debug_color = Color(0.600742, 0.464758, 0.742591, 0.42)

@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://csookjorjvx4o"]
+
+[ext_resource type="PackedScene" uid="uid://b2j4xprho0p2e" path="res://opject_new/Sword And Shield Run.fbx" id="1_7xh8p"]
+
+[node name="Sword And Shield Run" instance=ExtResource("1_7xh8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.552037, 0)
+
+[node name="GeneralSkeleton" parent="." index="0"]
+bones/0/position = Vector3(0.0695862, 1.85055, 3.55919)
+bones/0/rotation = Quaternion(0.152343, 0.0157726, -0.0412601, 0.98734)
+bones/1/rotation = Quaternion(0.189082, -0.135332, 0.0645941, 0.970444)
+bones/2/rotation = Quaternion(0.0207006, -0.0392131, -0.00663296, 0.998994)
+bones/3/rotation = Quaternion(0.0184295, -0.0388069, -0.00525471, 0.999063)
+bones/4/rotation = Quaternion(-0.0737379, 0.0796825, -0.0338613, 0.993512)
+bones/5/rotation = Quaternion(-0.198477, 0.0907235, 0.0056911, 0.975881)
+bones/7/rotation = Quaternion(0.403023, 0.582343, 0.516222, -0.481626)
+bones/8/rotation = Quaternion(-0.0117192, 0.970834, 0.0835105, 0.224434)
+bones/9/rotation = Quaternion(0.0850148, -0.960914, 0.0283594, 0.26194)
+bones/11/rotation = Quaternion(0.444641, -0.552836, -0.513103, -0.483106)
+bones/12/rotation = Quaternion(-0.226667, 0.947629, -0.0312812, -0.222809)
+bones/13/rotation = Quaternion(0.0678647, 0.974423, -0.146978, 0.155857)
+bones/15/rotation = Quaternion(-0.0176051, 0.293831, 0.955598, 0.0136604)
+bones/16/rotation = Quaternion(-0.0609895, 0.724708, -0.671672, 0.141194)
+bones/17/rotation = Quaternion(0.0125276, 0.965505, -0.252412, -0.0627031)
+bones/18/rotation = Quaternion(0.0562554, 0.995062, 0.0401077, 0.0712655)
+bones/20/rotation = Quaternion(0.0105047, 0.476257, 0.878997, -0.0208054)
+bones/21/rotation = Quaternion(-0.0329859, 0.954939, -0.284074, -0.0794086)
+bones/22/rotation = Quaternion(-0.0354092, 0.713178, -0.699839, 0.0186547)
+bones/23/rotation = Quaternion(0.0236094, 0.999629, -0.013296, 0.0026345)

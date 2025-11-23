@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhle0vc4fh1ta"]
+
+[ext_resource type="PackedScene" uid="uid://5wiju2gxnjib" path="res://MODEL-HALLOWEEN/Floor Tile.glb" id="1_vkv5u"]
+[ext_resource type="Shader" uid="uid://dsmddybre804o" path="res://MODEL03/floor.gdshader" id="2_rtai1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7qdqu"]
+render_priority = 0
+shader = ExtResource("2_rtai1")
+shader_parameter/tint_color = Color(0.478431, 0.372549, 0.0431373, 1)
+
+[node name="Floor" instance=ExtResource("1_vkv5u")]
+
+[node name="Floor_Modular" parent="RootNode" index="0"]
+material_override = SubResource("ShaderMaterial_7qdqu")

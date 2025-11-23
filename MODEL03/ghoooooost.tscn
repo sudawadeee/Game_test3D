@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccqt3dosdpu5v"]
+
+[ext_resource type="PackedScene" uid="uid://c07ikrlgghv5p" path="res://MODEL-HALLOWEEN/Ghoooooost.glb" id="1_x1lbu"]
+
+[node name="Ghoooooost" instance=ExtResource("1_x1lbu")]

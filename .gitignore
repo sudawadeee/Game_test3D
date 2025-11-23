@@ -1,0 +1,16 @@
+# --- Godot 4.x ---
+/.godot/           # แคชของเอดิเตอร์/โปรเจกต์ (ไม่ต้องเก็บ)
+ /.import/         # ไฟล์นำเข้าที่ Godot สร้างใหม่ได้
+*.translation~     # ไฟล์ชั่วคราวจากการแก้แปล
+
+# --- Build/Export output (ถ้ามีโฟลเดอร์สำหรับบิลด์) ---
+/export/
+/build/
+/bin/
+
+# --- IDE/OS junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
