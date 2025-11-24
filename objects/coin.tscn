@@ -65,7 +65,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.273216, 0)
 
 [node name="GlowLight" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.158862, 0.646181, 0)
-light_color = Color(0.832367, 0.593058, 0, 1)
+light_color = Color(0.83, 0, 0, 1)
 light_energy = 4.808
 omni_range = 3.0
 

@@ -32,5 +32,5 @@ glow_strength = 0.3
 glow_map_strength = 1.0
 adjustment_enabled = true
 adjustment_brightness = 0.9
-adjustment_contrast = 1.6
+adjustment_contrast = 1.1
 adjustment_saturation = 1.34

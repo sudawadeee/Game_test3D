@@ -7,3 +7,5 @@ res://main_menu.tscn
 res://opject_new/banana.tscn
 res://mum_tscn/hen.tscn
 res://objects/coin.tscn
+res://mum_tscn/bananaPlayer.tscn
+res://scenes/tutorial_popup.gd

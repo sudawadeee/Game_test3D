@@ -1,3 +1,5 @@
+TextureRect
+Node3D
 MeshInstance3D
 OmniLight3D
 Label
@@ -11,5 +13,3 @@ CheckBox
 AudioStreamPlayer
 AudioStreamPlayer2D
 AudioStreamPlayer3D
-Timer
-VBoxContainer

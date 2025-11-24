@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dag41i2n3qh0c"
-path="res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex"
+uid="uid://d3qu5bky25epl"
+path="res://.godot/imported/wasd-keys-_wasdkey.webp-d379aa4b59518533c059e9aa2b2edbbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/index.icon.png"
-dest_files=["res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex"]
+source_file="res://tutorial/wasd-keys-_wasdkey.webp"
+dest_files=["res://.godot/imported/wasd-keys-_wasdkey.webp-d379aa4b59518533c059e9aa2b2edbbf.ctex"]
 
 [params]
 

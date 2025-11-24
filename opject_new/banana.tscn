@@ -1,7 +1,7 @@
 [gd_scene load_steps=42 format=4 uid="uid://bis0hgcd7hm7o"]
 
 [ext_resource type="Script" uid="uid://erbnakaw5xsg" path="res://opject_new/banana.gd" id="1_iayh2"]
-[ext_resource type="AnimationLibrary" uid="uid://dwka0podvhgpc" path="res://animation/Locomotion-Library.res" id="3_7piqy"]
+[ext_resource type="AnimationLibrary" uid="uid://dwka0podvhgpc" path="res://animation/Locomotion-Library.res" id="2_dd2mi"]
 [ext_resource type="Texture2D" uid="uid://8ggihh27mlrr" path="res://sprites/blob_shadow.png" id="3_dd2mi"]
 [ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/Textures/colormap.png" id="4_dd2mi"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://sounds/walking.ogg" id="5_5d6av"]
@@ -181,7 +181,7 @@ emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_dd2mi"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_5d6av"]
 resource_name = "mesh472228931"
 _surfaces = [{
 "aabb": AABB(-0.0092038, -0.00340253, -0.00238182, 0.014612, 0.0108629, 0.0264914),
@@ -496,7 +496,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="Skin" id="Skin_7piqy"]
+[sub_resource type="Skin" id="Skin_ox7s7"]
 resource_name = "Skin"
 bind_count = 22
 bind/0/name = &"LeftUpperLeg"
@@ -1011,13 +1011,13 @@ bones/24/rotation = Quaternion(0.269729, 0.927863, -0.0820272, 0.244105)
 bones/24/scale = Vector3(1, 1, 1)
 
 [node name="group472228931" type="MeshInstance3D" parent="Banana/GeneralSkeleton"]
-mesh = SubResource("ArrayMesh_dd2mi")
-skin = SubResource("Skin_7piqy")
+mesh = SubResource("ArrayMesh_5d6av")
+skin = SubResource("Skin_ox7s7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Banana" groups=["player"]]
 libraries = {
 &"": SubResource("AnimationLibrary_bjwgr"),
-&"Locomotion-Library": ExtResource("3_7piqy")
+&"Locomotion-Library": ExtResource("2_dd2mi")
 }
 
 [node name="Collider" type="CollisionShape3D" parent="."]
