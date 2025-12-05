@@ -17,4 +17,4 @@ func _on_area_body_entered(body: Node) -> void:
 		return
 
 	# ผ่านเงื่อนไข = ตอบครบแล้ว และเกมยังไม่จบ
-	var is_win := Game.finish_level()
+	var _is_win := Game.finish_level()

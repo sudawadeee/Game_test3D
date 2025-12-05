@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://blhd7pypswnt6"
 path.s3tc="res://.godot/imported/green grass tall_texture_0_6195987693227547908.png-523c2a432eecf29c5592d1071897bbd4.s3tc.ctex"
+path.etc2="res://.godot/imported/green grass tall_texture_0_6195987693227547908.png-523c2a432eecf29c5592d1071897bbd4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://mum_model/green grass tall_texture_0_6195987693227547908.png"
-dest_files=["res://.godot/imported/green grass tall_texture_0_6195987693227547908.png-523c2a432eecf29c5592d1071897bbd4.s3tc.ctex"]
+dest_files=["res://.godot/imported/green grass tall_texture_0_6195987693227547908.png-523c2a432eecf29c5592d1071897bbd4.s3tc.ctex", "res://.godot/imported/green grass tall_texture_0_6195987693227547908.png-523c2a432eecf29c5592d1071897bbd4.etc2.ctex"]
 
 [params]
 

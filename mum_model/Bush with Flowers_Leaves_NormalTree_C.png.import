@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://8r1utk6fqv1n"
 path.s3tc="res://.godot/imported/Bush with Flowers_Leaves_NormalTree_C.png-03a582980cc2a547e6cca8973e0abbcc.s3tc.ctex"
+path.etc2="res://.godot/imported/Bush with Flowers_Leaves_NormalTree_C.png-03a582980cc2a547e6cca8973e0abbcc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://mum_model/Bush with Flowers_Leaves_NormalTree_C.png"
-dest_files=["res://.godot/imported/Bush with Flowers_Leaves_NormalTree_C.png-03a582980cc2a547e6cca8973e0abbcc.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bush with Flowers_Leaves_NormalTree_C.png-03a582980cc2a547e6cca8973e0abbcc.s3tc.ctex", "res://.godot/imported/Bush with Flowers_Leaves_NormalTree_C.png-03a582980cc2a547e6cca8973e0abbcc.etc2.ctex"]
 
 [params]
 

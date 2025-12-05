@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://rqya4hlcyxgk"
 path.s3tc="res://.godot/imported/Pallet Broken_Zombie_Atlas.png-084f0b4d599ee81917e353d1dd1b5e49.s3tc.ctex"
+path.etc2="res://.godot/imported/Pallet Broken_Zombie_Atlas.png-084f0b4d599ee81917e353d1dd1b5e49.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Models_new/Pallet Broken_Zombie_Atlas.png"
-dest_files=["res://.godot/imported/Pallet Broken_Zombie_Atlas.png-084f0b4d599ee81917e353d1dd1b5e49.s3tc.ctex"]
+dest_files=["res://.godot/imported/Pallet Broken_Zombie_Atlas.png-084f0b4d599ee81917e353d1dd1b5e49.s3tc.ctex", "res://.godot/imported/Pallet Broken_Zombie_Atlas.png-084f0b4d599ee81917e353d1dd1b5e49.etc2.ctex"]
 
 [params]
 

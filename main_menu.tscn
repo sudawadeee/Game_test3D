@@ -41,7 +41,7 @@ theme_override_fonts/font = ExtResource("3_fu7sn")
 theme_override_font_sizes/font_size = 60
 text = "เริ่มเกม"
 
-[node name="QuitBuitton" type="Button" parent="."]
+[node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 559.0
 offset_top = 459.0
@@ -51,5 +51,4 @@ theme_override_fonts/font = ExtResource("3_fu7sn")
 theme_override_font_sizes/font_size = 60
 text = "ออกเกม"
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="QuitBuitton" to="." method="_on_quit_buitton_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_buitton_pressed"]

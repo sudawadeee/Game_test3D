@@ -14,6 +14,7 @@ config/name="Starter Kit 3D Platformer"
 config/tags=PackedStringArray("starterkit")
 run/main_scene="uid://dj362ff15mcfq"
 config/features=PackedStringArray("4.4", "Forward Plus")
+run/max_fps=60
 boot_splash/bg_color=Color(0.92549, 0.92549, 0.960784, 1)
 boot_splash/image="res://splash-screen.png"
 config/icon="res://icon.png"
@@ -29,11 +30,14 @@ QuestionManager="*res://scripts/QuestionManager.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [editor]
 
 movie_writer/movie_file="C:/Users/Kenney/Desktop/video-footage.avi"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg")
 
 [filesystem]
 
@@ -115,4 +119,9 @@ common/physics_interpolation=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
+textures/vram_compression/import_etc2_astc=true
+environment/ssao/quality=1
+environment/ssil/quality=1
+scaling_3d/scale=0.75
 anti_aliasing/quality/screen_space_aa=1

@@ -3,9 +3,12 @@ res://scenes/main-environment.tres
 res://scenes/main.gdshader
 res://opject_new/banana.gd
 res://MODEL03/floor.gdshader
+res://scenes/touch_controls.gd
 res://main_menu.tscn
 res://opject_new/banana.tscn
-res://mum_tscn/hen.tscn
-res://objects/coin.tscn
-res://mum_tscn/bananaPlayer.tscn
-res://scenes/tutorial_popup.gd
+res://objects/coin.gd
+res://opject_new/flag.gd
+res://scenes/QuizPopup.gd
+res://scripts/QuestionManager.gd
+res://scenes/look_area.gd
+res://scenes/jump_button.gd

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2a65mbeasdea"
 path.s3tc="res://.godot/imported/vegeteble_0.png-ca98bca89ccd2760c7c0f7f8a5461d2c.s3tc.ctex"
+path.etc2="res://.godot/imported/vegeteble_0.png-ca98bca89ccd2760c7c0f7f8a5461d2c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://mum_model/vegeteble_0.png"
-dest_files=["res://.godot/imported/vegeteble_0.png-ca98bca89ccd2760c7c0f7f8a5461d2c.s3tc.ctex"]
+dest_files=["res://.godot/imported/vegeteble_0.png-ca98bca89ccd2760c7c0f7f8a5461d2c.s3tc.ctex", "res://.godot/imported/vegeteble_0.png-ca98bca89ccd2760c7c0f7f8a5461d2c.etc2.ctex"]
 
 [params]
 

@@ -1,3 +1,4 @@
+#QuizPopup
 extends Control
 
 signal answered(correct: bool)
@@ -23,7 +24,7 @@ func _ready():
 
 	# UI อยู่บนสุด
 	top_level = true
-	z_index = 99999
+	z_index = 4096
 
 	# Connect ปุ่ม
 	btn_a.pressed.connect(_on_BtnA_pressed)

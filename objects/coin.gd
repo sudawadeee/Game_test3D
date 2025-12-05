@@ -1,3 +1,4 @@
+#coin
 extends Area3D
 
 var grabbed := false
@@ -18,7 +19,7 @@ func _on_body_entered(body):
 
 	grabbed = true
 
-	monitoring = false
+	set_deferred("monitoring", false)
 	collision_layer = 0
 	collision_mask = 0
 

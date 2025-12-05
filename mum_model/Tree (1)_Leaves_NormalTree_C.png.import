@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba4cau2mga233"
 path.s3tc="res://.godot/imported/Tree (1)_Leaves_NormalTree_C.png-d1521cefe0c0d1e42c51909906fc055f.s3tc.ctex"
+path.etc2="res://.godot/imported/Tree (1)_Leaves_NormalTree_C.png-d1521cefe0c0d1e42c51909906fc055f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://mum_model/Tree (1)_Leaves_NormalTree_C.png"
-dest_files=["res://.godot/imported/Tree (1)_Leaves_NormalTree_C.png-d1521cefe0c0d1e42c51909906fc055f.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tree (1)_Leaves_NormalTree_C.png-d1521cefe0c0d1e42c51909906fc055f.s3tc.ctex", "res://.godot/imported/Tree (1)_Leaves_NormalTree_C.png-d1521cefe0c0d1e42c51909906fc055f.etc2.ctex"]
 
 [params]
 

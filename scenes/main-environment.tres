@@ -20,7 +20,6 @@ ambient_light_energy = 1.24
 tonemap_mode = 2
 tonemap_exposure = 3.02
 tonemap_white = 6.88
-ssao_enabled = true
 ssao_radius = 0.01
 ssao_intensity = 1.0
 ssao_power = 15.0

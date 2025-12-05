@@ -1,3 +1,4 @@
+#QuestionManager.gd
 extends Node
 
 var questions: Array = []          # คำถามทั้งหมด

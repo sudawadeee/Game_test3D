@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5qnrxoiip1rr"
 path.s3tc="res://.godot/imported/Running_0.png-9a9f549b6c5cb560935d6911b9d1f5b8.s3tc.ctex"
+path.etc2="res://.godot/imported/Running_0.png-9a9f549b6c5cb560935d6911b9d1f5b8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://animation/Running_0.png"
-dest_files=["res://.godot/imported/Running_0.png-9a9f549b6c5cb560935d6911b9d1f5b8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Running_0.png-9a9f549b6c5cb560935d6911b9d1f5b8.s3tc.ctex", "res://.godot/imported/Running_0.png-9a9f549b6c5cb560935d6911b9d1f5b8.etc2.ctex"]
 
 [params]
 

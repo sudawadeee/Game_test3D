@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=59 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
@@ -20,10 +20,16 @@
 [ext_resource type="Script" uid="uid://cs4a56gqebc52" path="res://scenes/QuizPopup.gd" id="18_bu4jf"]
 [ext_resource type="PackedScene" uid="uid://bhle0vc4fh1ta" path="res://MODEL03/floor.tscn" id="18_yc10j"]
 [ext_resource type="AudioStream" uid="uid://d4b1u7j4t4ouh" path="res://sounds/mixkit-video-game-win-2016.wav" id="19_o7ddy"]
+[ext_resource type="Script" uid="uid://du808rlec2uys" path="res://scenes/touch_controls.gd" id="19_vc5cj"]
 [ext_resource type="AudioStream" uid="uid://b0fxuj8yysam3" path="res://sounds/game-over-417465.mp3" id="20_0loja"]
 [ext_resource type="Script" uid="uid://bicu2eywyvtao" path="res://scenes/tutorial_popup.gd" id="20_bjg73"]
 [ext_resource type="PackedScene" uid="uid://kf8w28c3kdav" path="res://opject_new/shipping_container.tscn" id="20_pm3ni"]
+[ext_resource type="Texture2D" uid="uid://dcir3ty2jsikq" path="res://addons/virtual_joystick/sprites/JoystickSplitted.png" id="20_ty1g6"]
 [ext_resource type="PackedScene" uid="uid://c5i410t3coqk3" path="res://MODEL03/fence.tscn" id="20_y6deb"]
+[ext_resource type="Texture2D" uid="uid://cf4iie3mwu7f" path="res://addons/virtual_joystick/sprites/LargeHandleFilledGrey.png" id="21_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://biev80efaqv52" path="res://addons/virtual_joystick/sprites/1212.png" id="22_bu4jf"]
+[ext_resource type="Script" uid="uid://div4uyw02la3s" path="res://scenes/look_area.gd" id="22_j2jfr"]
+[ext_resource type="Script" uid="uid://w2h4lgnbb66d" path="res://scenes/jump_button.gd" id="23_o7ddy"]
 [ext_resource type="Script" uid="uid://b3w3ah03k8unp" path="res://scenes/WinPopup.gd" id="24_y6deb"]
 [ext_resource type="Script" uid="uid://c0vinqay1n2fy" path="res://MODEL03/floordrop.gd" id="26_vxglm"]
 [ext_resource type="PackedScene" uid="uid://br66uhieswkg2" path="res://MODEL03/checkpoint.tscn" id="33_5q0nq"]
@@ -351,6 +357,7 @@ text = "Settings"
 
 [node name="SettingsWindow" type="Window" parent="Control"]
 unique_name_in_owner = true
+scaling_3d_scale = 1.0
 visible = false
 
 [node name="VBoxContainer2" type="Panel" parent="Control"]
@@ -402,6 +409,84 @@ offset_right = 466.0
 offset_bottom = 313.0
 theme_override_font_sizes/font_size = 30
 text = "SFX Volume"
+
+[node name="CanvasLayer5" type="CanvasLayer" parent="."]
+
+[node name="JumpButton" type="TextureButton" parent="CanvasLayer5"]
+unique_name_in_owner = true
+z_index = 25
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1058.0
+offset_top = 296.0
+offset_right = 134.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.493256, 0.504316)
+texture_normal = ExtResource("22_bu4jf")
+script = ExtResource("23_o7ddy")
+
+[node name="CanvasLayer4" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="TouchControls" type="Control" parent="CanvasLayer4"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("19_vc5cj")
+
+[node name="LeftJoy" type="TextureRect" parent="CanvasLayer4/TouchControls"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 51.0
+offset_top = 311.0
+offset_right = 407.0
+offset_bottom = 667.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_ty1g6")
+
+[node name="Inner" type="TextureRect" parent="CanvasLayer4/TouchControls/LeftJoy"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+offset_right = 150.0
+offset_bottom = 150.0
+texture = ExtResource("21_ty1g6")
+
+[node name="RightJoy" type="TextureRect" parent="CanvasLayer4/TouchControls"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1004.0
+offset_top = 556.0
+offset_right = 1044.0
+offset_bottom = 596.0
+
+[node name="Inner" type="TextureRect" parent="CanvasLayer4/TouchControls/RightJoy"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LookArea" type="Control" parent="CanvasLayer4"]
+layout_mode = 3
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("22_j2jfr")
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="."]
 layer = 0
