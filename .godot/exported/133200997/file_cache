@@ -24,7 +24,7 @@ res://opject_new/shipping_container.tscn::2f9ce853b72066308135d83379345ea0::1764
 res://opject_new/shipping.tscn::a39fc287ab535ddc43fc86309856e00a::1764491269::res://.godot/exported/133200997/export-f70064bef399bfabe54bfbe0c5515bac-shipping.scn
 res://opject_new/tree.tscn::2a1d7d48c4cf91291f51438b6631011e::1764491269::res://.godot/exported/133200997/export-e51e936ddf53c7db7b424f759b6ae558-tree.scn
 res://scenes/main-environment.tres::88b59727d12ce15b3eee2969e569a9f9::1765301205::res://.godot/exported/133200997/export-28bf1ccc4abadd0ff8843f0750409a65-main-environment.res
-res://scenes/main.tscn::22545969ea2d6c30406cf285858750eb::1765301262::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/main.tscn::22545969ea2d6c30406cf285858750eb::1765301436::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
 res://MODEL03/checkpoint.tscn::7c7b3bdf134a51d299588cdc068c1e9d::1764491265::res://.godot/exported/133200997/export-7dde027c95ab5217077846bc62a9f4a3-checkpoint.scn
 res://MODEL03/enemy_ghost.tscn::70805f2b8a17fde506d72afb8363a1b2::1765035330::res://.godot/exported/133200997/export-a32d33f0e38312fac8263b4b591b7601-enemy_ghost.scn
 res://MODEL03/fence.tscn::9294c3f4049aa1547524b67db664aac4::1764491265::res://.godot/exported/133200997/export-59011f6a7cd91b6441994e445a6adea9-fence.scn
