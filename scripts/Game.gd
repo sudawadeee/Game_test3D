@@ -13,9 +13,9 @@ signal lose(correct: int, total: int)
 # ==========================================================
 var levels: Array = [
 	"res://scenes/main.tscn",
-	"res://scenes/Lavel2.tscn",
-	"res://scenes/Lavel3.tscn",
-	"res://scenes/Lavel4.tscn"
+	"res://scenes/Level2.tscn",
+	"res://scenes/Level3.tscn",
+	"res://scenes/Level4.tscn"
 ]
 
 # ตัวแปรเก็บความคืบหน้า

@@ -78,7 +78,7 @@ bg_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_kqcoa")
-level_id = "level4"
+level_id = "Level4"
 
 [node name="Water" type="MeshInstance3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -0.909749, 0)
@@ -223,13 +223,14 @@ z_index = 25
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 252.0
-offset_top = 354.0
-offset_right = -672.0
-offset_bottom = -10.0
+offset_left = 1476.0
+offset_top = 528.0
+offset_right = 552.0
+offset_bottom = 164.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.493256, 0.504316)
+focus_mode = 0
 texture_normal = ExtResource("15_d67v6")
 script = ExtResource("16_pcki7")
 

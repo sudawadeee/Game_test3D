@@ -15,3 +15,9 @@ res://opject_new/pallet.tscn
 res://default_bus_layout.tres
 res://scenes/main_menu.gd
 res://scripts/questions.json
+res://scripts/Game.gd
+res://scenes/Level2.tscn
+res://scenes/Level3.tscn
+res://scenes/Level4.tscn
+res://scenes/touch_controls.gd
+res://scenes/jump_button.gd
