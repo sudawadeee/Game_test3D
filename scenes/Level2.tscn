@@ -333,6 +333,7 @@ grow_vertical = 2
 
 [node name="QuestionLabel" type="Label" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 154.0
 offset_top = 129.0
 offset_right = 1799.0
@@ -346,6 +347,7 @@ autowrap_mode = 3
 
 [node name="BtnA" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 302.0
 offset_top = 378.0
 offset_right = 1690.0
@@ -357,6 +359,7 @@ autowrap_mode = 3
 
 [node name="BtnB" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 305.0
 offset_top = 525.0
 offset_right = 1694.0
@@ -368,6 +371,7 @@ autowrap_mode = 3
 
 [node name="BtnC" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 308.0
 offset_top = 688.0
 offset_right = 1693.0
