@@ -43,8 +43,8 @@ func load_level_data():
 				"ยินดีต้อนรับสู่ด่านแรก!\n(กด ESC เพื่อเปิดใช้งานเมาส์)",
 				"การควบคุมในคอม:\n W A S D = เดิน",
 				"การกระโดด:Spacebar = กระโดดปกติ\n กด Spacebar 2 ครั้ง = กระโดดสูง\n(Spacebar คือปุ่มยาวด้านล่างของคีย์บอร์ด)",
-				"การควบคุมในโทรศัพท์ 1:\nใช้จอยสติ๊กด้านซ้ายเพื่อเดิน\nใช้ปุ่มด้านขวาเพื่อกระโดด",
-				"การควบคุมในโทรศัพท์ 2:",
+				"การควบคุมในโทรศัพท์:\nใช้จอยสติ๊กด้านซ้ายเพื่อเดิน\nใช้ปุ่มด้านขวาเพื่อกระโดด",
+				"การควบคุมในโทรศัพท์:",
 				"ศัตรู:\nกระโดดเหยียบหัวเพื่อกำจัดมัน",
 				"การผ่านด่าน:\nกระโดดไปตามแท่นต่าง ๆ กำจัดศัตรู\nตคำถามทั้งหมด 5 ข้อ\nพยายามตอบให้ถูกอย่างน้อย 4 ข้อ\nเพื่อเก็บไอเทมและชนะเกม"
 			]
@@ -52,8 +52,8 @@ func load_level_data():
 				preload("res://tutorial/welcome.png"),
 				preload("res://tutorial/wasd-keys-_wasdkey.webp"),
 				preload("res://tutorial/spacebar.jpg"),
-				preload("res://tutorial/2.png"),
 				preload("res://tutorial/3.png"),
+				preload("res://tutorial/2.png"),
 				preload("res://tutorial/Screenshot 2025-11-24 235102.png"),
 				preload("res://tutorial/quetion.png")
 			]

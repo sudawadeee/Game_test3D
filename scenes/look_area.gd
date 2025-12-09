@@ -6,11 +6,10 @@ signal look_input(delta: Vector2)
 var look_touch_id: int = -1
 var last_pos: Vector2 = Vector2.ZERO
 
-
 func _input(event: InputEvent) -> void:
 
 	# ===============================
-	# TOUCH INPUT
+	# TOUCH INPUT (มือถือ)
 	# ===============================
 	if event is InputEventScreenTouch:
 		if event.pressed:
@@ -25,6 +24,10 @@ func _input(event: InputEvent) -> void:
 		if event.index == look_touch_id:
 			var delta: Vector2 = event.position - last_pos
 			last_pos = event.position
+			
+			# 🟢 แก้ไขตรงนี้: กลับด้านแกน Y (Invert Y)
+			delta.y = -delta.y 
+			
 			emit_signal("look_input", delta)
 
 
@@ -42,6 +45,10 @@ func _input(event: InputEvent) -> void:
 	elif event is InputEventMouseMotion:
 		if look_touch_id == 9999:
 			var delta: Vector2 = event.relative
+			
+			# 🟢 แก้ไขตรงนี้: กลับด้านแกน Y (Invert Y)
+			delta.y = -delta.y
+			
 			emit_signal("look_input", delta)
 
 

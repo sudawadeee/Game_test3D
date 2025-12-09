@@ -344,8 +344,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1476.0
 offset_top = 528.0
-offset_right = 552.0
-offset_bottom = 164.0
+offset_right = -88.0
+offset_bottom = -196.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.493256, 0.504316)
@@ -383,8 +383,8 @@ texture = ExtResource("20_ty1g6")
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-offset_right = 150.0
-offset_bottom = 150.0
+offset_right = 250.0
+offset_bottom = 250.0
 texture = ExtResource("21_ty1g6")
 
 [node name="LookArea" type="Control" parent="CanvasLayer4"]
@@ -969,6 +969,9 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -33.4442, 9.22808, -10.8717)
 [node name="Checkpoint2" parent="chackpoint" instance=ExtResource("33_5q0nq")]
 transform = Transform3D(0.0490416, 0, -0.998797, 0, 0.1, 0, 0.998797, 0, 0.0490416, -21.3066, 6.41143, 4.77014)
 
+[node name="Checkpoint3" parent="chackpoint" instance=ExtResource("33_5q0nq")]
+transform = Transform3D(0.0490416, 0, -0.998797, 0.0884227, 0.0996074, 0.00434161, 0.994875, -0.00885292, 0.048849, -25.8474, 11.4893, -14.6517)
+
 [node name="Sketchfab_Scene" parent="chackpoint" instance=ExtResource("34_j8jky")]
 transform = Transform3D(-3.93403e-08, 0, 0.9, 0, 0.9, 0, -0.9, 0, -3.93403e-08, -22.0405, 6.57821, 4.80165)
 
@@ -1447,5 +1450,8 @@ transform = Transform3D(-0.000680209, 0, 0.00292187, 0, 0.003, 0, -0.00292187, 0
 
 [node name="flag" parent="." instance=ExtResource("34_dgi5k")]
 transform = Transform3D(-0.868951, 0, 0.494898, 0, 1, 0, -0.494898, 0, -0.868951, -47.4851, 15.1471, -14.1982)
+
+[node name="Checkpoint" parent="." instance=ExtResource("33_5q0nq")]
+transform = Transform3D(1, 0, 0, 0, 0.0994089, 0.108572, 0, -0.0108572, 0.994089, -0.382064, 3.90943, 15.1548)
 
 [connection signal="coin_collected" from="Banana" to="HUD" method="_on_coin_collected"]
