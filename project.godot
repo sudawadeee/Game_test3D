@@ -24,6 +24,7 @@ config/icon="res://icon.png"
 Audio="*res://scripts/audio.gd"
 Game="*res://scripts/Game.gd"
 QuestionManager="*res://scripts/QuestionManager.gd"
+RotateWarning="*res://RotateWarning.tscn"
 
 [display]
 

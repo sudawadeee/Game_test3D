@@ -4,7 +4,7 @@ res://scenes/main.gdshader
 res://opject_new/banana.gd
 res://MODEL03/floor.gdshader
 res://scenes/WinPopup.gd
-res://scenes/look_area.gd
+res://scripts/questions.json
 res://scenes/main.tscn
 res://scenes/Level2.tscn
 res://scenes/Level3.tscn
@@ -13,4 +13,6 @@ res://opject_new/banana.tscn
 res://objects/flag.tscn
 res://opject_new/pallet.tscn
 res://scenes/touch_controls.gd
-res://scenes/tutorial_popup.gd
+res://scenes/jump_button.gd
+res://RotateWarning.tscn
+res://rotate_warning.gd

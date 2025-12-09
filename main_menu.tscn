@@ -12,8 +12,8 @@ offset_bottom = 40.0
 script = ExtResource("1_7vrkn")
 
 [node name="Cute-halloween-town-anime-hkh0Diq2i0Gykpz3" type="Sprite2D" parent="."]
-position = Vector2(977, 533)
-scale = Vector2(1.15104, 1.10938)
+position = Vector2(970.5, 556.5)
+scale = Vector2(2.1402, 2.04228)
 texture = ExtResource("2_jix8l")
 
 [node name="title" type="Label" parent="."]

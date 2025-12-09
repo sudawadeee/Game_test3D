@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://c21vcr81xexnq"]
+
+[ext_resource type="Script" uid="uid://nxufeswdgxhf" path="res://rotate_warning.gd" id="1_acvxy"]
+[ext_resource type="Texture2D" uid="uid://bldcqbcgvjpwr" path="res://tutorial/12.png" id="1_shult"]
+[ext_resource type="FontFile" uid="uid://bnkmhececypy7" path="res://ArunSerB.ttf" id="2_acvxy"]
+
+[node name="RotateWarning" type="CanvasLayer"]
+process_mode = 3
+layer = 100
+script = ExtResource("1_acvxy")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.407843, 0.698039, 0.309804, 0.835294)
+
+[node name="CenterContainer" type="CenterContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/CenterContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Background/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("1_shult")
+
+[node name="Label" type="Label" parent="Background/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_acvxy")
+theme_override_font_sizes/font_size = 90
+text = "กรุณาหมุนจอ..."

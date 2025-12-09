@@ -68,13 +68,13 @@ font_size = 48
 shadow_color = Color(0, 0, 0, 0.376471)
 shadow_offset = Vector2(2, 2)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txyw0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o88tm"]
 bg_color = Color(0, 0, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vc5cj"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c5oc0"]
 bg_color = Color(0, 0, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nvyfr"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftyy2"]
 bg_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node3D"]
@@ -196,26 +196,6 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("14_oemad")
 theme_override_font_sizes/font_size = 80
 
-[node name="MessageLabel" type="Label" parent="HUD"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -498.0
-offset_top = -49.5
-offset_right = 498.0
-offset_bottom = 49.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("14_oemad")
-theme_override_font_sizes/font_size = 50
-text = "ตอบคำถามให้ถูกต้อง เพื่อเก็บไอเทม แล้วเอาชนะเกมนี้!!"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="CanvasLayer5" type="CanvasLayer" parent="."]
 
 [node name="JumpButton" type="TextureButton" parent="CanvasLayer5"]
@@ -317,52 +297,48 @@ grow_vertical = 2
 
 [node name="QuestionLabel" type="Label" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 441.0
-offset_top = 155.0
-offset_right = 1557.0
-offset_bottom = 234.0
+offset_left = 154.0
+offset_top = 129.0
+offset_right = 1799.0
+offset_bottom = 225.0
 theme_override_fonts/font = ExtResource("14_oemad")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_txyw0")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_o88tm")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="BtnA" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 560.0
-offset_top = 326.0
-offset_right = 1403.0
-offset_bottom = 392.0
+offset_left = 302.0
+offset_top = 378.0
+offset_right = 1690.0
+offset_bottom = 444.0
 theme_override_fonts/font = ExtResource("14_oemad")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_vc5cj")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_c5oc0")
 autowrap_mode = 3
 
 [node name="BtnB" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 565.0
-offset_top = 452.0
-offset_right = 1409.0
-offset_bottom = 524.0
+offset_left = 305.0
+offset_top = 525.0
+offset_right = 1694.0
+offset_bottom = 597.0
 theme_override_fonts/font = ExtResource("14_oemad")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_nvyfr")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_ftyy2")
 autowrap_mode = 3
 
 [node name="BtnC" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 563.0
-offset_top = 593.0
-offset_right = 1406.0
-offset_bottom = 670.0
+offset_left = 308.0
+offset_top = 688.0
+offset_right = 1693.0
+offset_bottom = 765.0
 theme_override_fonts/font = ExtResource("14_oemad")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_nvyfr")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_ftyy2")
 autowrap_mode = 3
 
 [node name="BtnD" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
@@ -373,15 +349,15 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -410.0
-offset_top = -364.0
-offset_right = 430.0
-offset_bottom = -298.0
+offset_left = -672.0
+offset_top = -235.0
+offset_right = 717.0
+offset_bottom = -169.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("14_oemad")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_nvyfr")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_ftyy2")
 autowrap_mode = 3
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -889,11 +865,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50773, 0.44412, -8.46454)
 [node name="Root Scene41" parent="." instance=ExtResource("34_n1kvm")]
 transform = Transform3D(-0.114033, 0, -0.589064, 0, 0.6, 0, 0.589064, 0, -0.114033, 2.22444, 0.572124, 0.683667)
 
-[node name="Cow" parent="." instance=ExtResource("35_mxn0k")]
-transform = Transform3D(0.357242, 0, 0.17994, 0, 0.4, 0, -0.17994, 0, 0.357242, 2.12968, 0.514473, -4.52162)
-
 [node name="Cow2" parent="." instance=ExtResource("35_mxn0k")]
-transform = Transform3D(-0.0391799, 0, 0.377975, 0, 0.38, 0, -0.377975, 0, -0.0391799, -4.27598, 0.514473, -2.23837)
+transform = Transform3D(-0.0391799, 0, 0.377975, 0, 0.38, 0, -0.377975, 0, -0.0391799, -4.27598, 0.514473, -6.13444)
 
 [node name="Pig" parent="." instance=ExtResource("36_177wr")]
 transform = Transform3D(0.0947227, 0, -0.0320563, 0, 0.1, 0, 0.0320563, 0, 0.0947227, -0.905833, 0.492429, -2.31402)
