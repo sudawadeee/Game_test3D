@@ -87,7 +87,6 @@ bg_color = Color(0, 0, 0, 1)
 [node name="Main" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00133157, 0.00922549, 0.00914133)
 script = ExtResource("1_jkv2x")
-level_id = "main"
 
 [node name="Water" type="MeshInstance3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -0.909749, 0)
@@ -372,10 +371,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 121.0
-offset_top = -486.0
-offset_right = 477.0
-offset_bottom = -130.0
+offset_left = 150.0
+offset_top = -527.0
+offset_right = 600.0
+offset_bottom = -77.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("20_ty1g6")

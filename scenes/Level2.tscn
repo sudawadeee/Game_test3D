@@ -4,7 +4,7 @@
 [ext_resource type="Shader" uid="uid://cnekpjh7prq1e" path="res://scenes/main.gdshader" id="2_m6vmn"]
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="3_e5c7a"]
 [ext_resource type="PackedScene" uid="uid://bis0hgcd7hm7o" path="res://opject_new/banana.tscn" id="4_pa3e6"]
-[ext_resource type="AudioStream" uid="uid://b8hfsg3mvgcl7" path="res://sounds/tam-xa-mai-56766.mp3" id="5_2fgrg"]
+[ext_resource type="AudioStream" uid="uid://dtdoyemwfxa1v" path="res://sounds/gamer-music-140-bpm-355954.mp3" id="5_ge0wg"]
 [ext_resource type="PackedScene" uid="uid://cx3olgl4rhjm0" path="res://MODEL03/enemy_ghost.tscn" id="6_ry5ve"]
 [ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="7_ktori"]
 [ext_resource type="PackedScene" uid="uid://kf8w28c3kdav" path="res://opject_new/shipping_container.tscn" id="8_i3plq"]
@@ -79,7 +79,7 @@ bg_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_2fgrg")
-level_id = "Level2"
+level_id = "level2"
 
 [node name="Water" type="MeshInstance3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -0.909749, 0)
@@ -94,7 +94,7 @@ environment = ExtResource("3_e5c7a")
 transform = Transform3D(0.999888, -0.0118331, -0.00910985, 0.0118326, 0.99993, -0.000107805, 0.00911049, 0, 0.999959, -0.109637, 0.465214, -7.48439)
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_2fgrg")
+stream = ExtResource("5_ge0wg")
 volume_db = -10.666
 autoplay = true
 parameters/looping = true
@@ -289,10 +289,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 121.0
-offset_top = -486.0
-offset_right = 477.0
-offset_bottom = -130.0
+offset_left = 150.0
+offset_top = -527.0
+offset_right = 600.0
+offset_bottom = -77.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("19_c2fdj")
@@ -1055,9 +1055,6 @@ transform = Transform3D(1, 0, 0, 0, 0.975207, 0.221293, 0, -0.221293, 0.975207, 
 [node name="Root Scene238" parent="." instance=ExtResource("40_luxkk")]
 transform = Transform3D(1, 0, 0, 0, 0.975207, 0.221293, 0, -0.221293, 0.975207, -1.64734, 2.80505, 47.7522)
 
-[node name="Checkpoint" parent="." instance=ExtResource("42_iyu02")]
-transform = Transform3D(1, 0, 0, 0, 0.1, 0, 0, 0, 1, -1.77259, 0.558624, 26.8757)
-
 [node name="flag" parent="." instance=ExtResource("43_y25jj")]
 transform = Transform3D(0.12516, 0, -0.992137, 0, 1, 0, 0.992137, 0, 0.12516, -1.56637, 3.10757, 48.396)
 
@@ -1090,5 +1087,8 @@ transform = Transform3D(2.68388, -2.96594, 0, 2.96594, 2.68388, 0, 0, 0, 4, 5.24
 
 [node name="cube10" parent="." instance=ExtResource("44_klnlj")]
 transform = Transform3D(-0.389496, -1.96171, 0, 1.96171, -0.389496, 0, 0, 0, 2, 3.61526, 1.71433, 44.2749)
+
+[node name="Checkpoint" parent="." instance=ExtResource("42_iyu02")]
+transform = Transform3D(1, 0, 0, 0, 0.1, 0, 0, 0, 1, -1.53765, 0.508268, 26.4936)
 
 [connection signal="coin_collected" from="Banana" to="HUD" method="_on_coin_collected"]

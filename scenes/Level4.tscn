@@ -4,7 +4,7 @@
 [ext_resource type="Shader" uid="uid://cnekpjh7prq1e" path="res://scenes/main.gdshader" id="2_motgg"]
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="3_3b0hd"]
 [ext_resource type="PackedScene" uid="uid://bis0hgcd7hm7o" path="res://opject_new/banana.tscn" id="4_a8aic"]
-[ext_resource type="AudioStream" uid="uid://726spog331yl" path="res://sounds/funky-and-jazzy-gang-loop-275533.mp3" id="5_kqcoa"]
+[ext_resource type="AudioStream" uid="uid://dtdoyemwfxa1v" path="res://sounds/gamer-music-140-bpm-355954.mp3" id="5_il22b"]
 [ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="6_tn2s6"]
 [ext_resource type="PackedScene" uid="uid://kf8w28c3kdav" path="res://opject_new/shipping_container.tscn" id="7_1af55"]
 [ext_resource type="PackedScene" uid="uid://qh4lkjtaatyr" path="res://mum_model/ChickenCoop.glb" id="8_ana2d"]
@@ -78,7 +78,7 @@ bg_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_kqcoa")
-level_id = "Level4"
+level_id = "level4"
 
 [node name="Water" type="MeshInstance3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -0.909749, 0)
@@ -93,7 +93,7 @@ environment = ExtResource("3_3b0hd")
 transform = Transform3D(0.999888, -0.0118331, -0.00910985, 0.0118326, 0.99993, -0.000107805, 0.00911049, 0, 0.999959, -0.109637, 0.465214, -7.48439)
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_kqcoa")
+stream = ExtResource("5_il22b")
 volume_db = -10.666
 autoplay = true
 parameters/looping = true
@@ -252,10 +252,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 121.0
-offset_top = -486.0
-offset_right = 477.0
-offset_bottom = -130.0
+offset_left = 150.0
+offset_top = -527.0
+offset_right = 600.0
+offset_bottom = -77.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("18_jckr7")
