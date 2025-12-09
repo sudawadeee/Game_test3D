@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4vj77m66m0oe"]
+
+[ext_resource type="PackedScene" uid="uid://ykmcsg80egc4" path="res://mum_model/Cabin.glb" id="1_814t3"]
+
+[node name="Cabin2" instance=ExtResource("1_814t3")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

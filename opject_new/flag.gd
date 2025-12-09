@@ -1,3 +1,4 @@
+#flag
 extends Node3D
 
 @onready var area: Area3D = $Area3D
@@ -11,7 +12,7 @@ func _on_area_body_entered(body: Node) -> void:
 		return
 
 	# เงื่อนไขตามโจทย์:
-	# - ถ้ายังตอบไม่ครบ 10 ข้อ → ไม่ทำอะไร
+	# - ถ้ายังตอบไม่ครบ 5 ข้อ → ไม่ทำอะไร
 	# - ถ้าจบเกมไปแล้ว (finished = true) → ไม่ทำอะไร
 	if not Game.can_finish():
 		return

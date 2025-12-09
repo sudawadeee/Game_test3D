@@ -12,43 +12,43 @@ offset_bottom = 40.0
 script = ExtResource("1_7vrkn")
 
 [node name="Cute-halloween-town-anime-hkh0Diq2i0Gykpz3" type="Sprite2D" parent="."]
-position = Vector2(642.75, 363.62)
-scale = Vector2(0.763802, 0.713633)
+position = Vector2(977, 533)
+scale = Vector2(1.15104, 1.10938)
 texture = ExtResource("2_jix8l")
 
 [node name="title" type="Label" parent="."]
 layout_mode = 0
-offset_left = 206.0
-offset_top = 97.0
-offset_right = 1079.0
-offset_bottom = 243.0
+offset_left = 449.0
+offset_top = 118.0
+offset_right = 1504.0
+offset_bottom = 298.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 0
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("3_fu7sn")
-theme_override_font_sizes/font_size = 120
+theme_override_font_sizes/font_size = 150
 text = " แบบทดสอบหลุมพึ่งพิง"
 horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = 571.0
-offset_top = 321.0
-offset_right = 724.0
-offset_bottom = 416.0
+offset_left = 875.0
+offset_top = 494.0
+offset_right = 1083.0
+offset_bottom = 610.0
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("3_fu7sn")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 90
 text = "เริ่มเกม"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 559.0
-offset_top = 459.0
-offset_right = 740.0
-offset_bottom = 554.0
+offset_left = 864.0
+offset_top = 724.0
+offset_right = 1093.0
+offset_bottom = 840.0
 theme_override_fonts/font = ExtResource("3_fu7sn")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 90
 text = "ออกเกม"
 
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_buitton_pressed"]

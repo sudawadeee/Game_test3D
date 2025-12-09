@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckwhloj05yy4a"]
+
+[ext_resource type="PackedScene" uid="uid://lsdbodtf3h8w" path="res://mum_model/Cutting Board.glb" id="1_crwjk"]
+
+[node name="Root Scene" instance=ExtResource("1_crwjk")]

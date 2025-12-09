@@ -15,9 +15,11 @@ func _physics_process(delta):
 	if position.y < -10:
 		queue_free() # Remove platform if below threshold
 
-func _on_body_entered(_body):
-	if !falling:
-		Audio.play("res://sounds/fall.ogg") # Play sound
-		scale = Vector3(1.25, 1, 1.25) # Animate scale
+func _on_body_entered(body): # ลบ _ หน้า body ออก เพราะเราจะเรียกใช้งานมันแล้ว
+	# เช็คว่าสิ่งที่ชน คือ "Player" เท่านั้น
+	if body.is_in_group("Player"): 
+		if !falling:
+			Audio.play("res://sounds/fall.ogg") 
+			scale = Vector3(1.25, 1, 1.25) 
 		
-	falling = true
+		falling = true

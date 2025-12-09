@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=58 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
@@ -33,9 +33,8 @@
 [ext_resource type="Script" uid="uid://b3w3ah03k8unp" path="res://scenes/WinPopup.gd" id="24_y6deb"]
 [ext_resource type="Script" uid="uid://c0vinqay1n2fy" path="res://MODEL03/floordrop.gd" id="26_vxglm"]
 [ext_resource type="PackedScene" uid="uid://br66uhieswkg2" path="res://MODEL03/checkpoint.tscn" id="33_5q0nq"]
-[ext_resource type="PackedScene" uid="uid://c6ucx63k4bxw0" path="res://opject_new/flag.tscn" id="34_dgi5k"]
+[ext_resource type="PackedScene" uid="uid://c6ucx63k4bxw0" path="res://objects/flag.tscn" id="34_dgi5k"]
 [ext_resource type="PackedScene" uid="uid://b5nkw2fso81qr" path="res://MODEL-HALLOWEEN/wooden_sign_-_baked_low_poly.glb" id="34_j8jky"]
-[ext_resource type="FontFile" uid="uid://4miclt4i2532" path="res://Allura-Regular.ttf" id="38_c6pm6"]
 [ext_resource type="PackedScene" uid="uid://x1yxn1h1bvvv" path="res://mum_tscn/grass_platform.tscn" id="40_5poiv"]
 [ext_resource type="PackedScene" uid="uid://c3nvxouvqsikg" path="res://mum_tscn/chicken.tscn" id="41_5poiv"]
 [ext_resource type="PackedScene" uid="uid://d0283km1un1br" path="res://mum_model/Big Tree.glb" id="41_chjal"]
@@ -86,6 +85,7 @@ bg_color = Color(0, 0, 0, 1)
 bg_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00133157, 0.00922549, 0.00914133)
 script = ExtResource("1_jkv2x")
 
 [node name="Water" type="MeshInstance3D" parent="."]
@@ -254,61 +254,65 @@ script = ExtResource("11_apvpm")
 
 [node name="Icon2" type="TextureRect" parent="HUD"]
 layout_mode = 0
-offset_left = 75.1574
-offset_top = -1.0
-offset_right = 4072.16
-offset_bottom = 3937.0
+offset_left = -207.843
+offset_top = 9.0
+offset_right = 3789.16
+offset_bottom = 3947.0
 rotation = 0.940322
 scale = Vector2(0.0277707, 0.026457)
 texture = ExtResource("13_txyw0")
 
 [node name="Icon" type="TextureRect" parent="HUD"]
 layout_mode = 0
-offset_left = 22.1574
-offset_top = 19.0
-offset_right = 4019.16
-offset_bottom = 3957.0
+offset_left = -260.843
+offset_top = 29.0
+offset_right = 3736.16
+offset_bottom = 3967.0
 scale = Vector2(0.0277707, 0.026457)
 texture = ExtResource("13_cjqg0")
 
 [node name="Icon3" type="TextureRect" parent="HUD"]
 layout_mode = 0
-offset_left = 29.1574
-offset_top = 38.0
-offset_right = 4026.16
-offset_bottom = 3976.0
+offset_left = -253.843
+offset_top = 48.0
+offset_right = 3743.16
+offset_bottom = 3986.0
 rotation = 0.0276184
 scale = Vector2(0.0277707, 0.026457)
 texture = ExtResource("15_vc5cj")
 
 [node name="x" type="Label" parent="HUD"]
 layout_mode = 0
-offset_left = 112.0
-offset_top = 64.0
-offset_right = 144.0
-offset_bottom = 123.0
+offset_left = -171.0
+offset_top = 74.0
+offset_right = -139.0
+offset_bottom = 133.0
 text = "×"
 label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Label" parent="HUD"]
 layout_mode = 0
-offset_left = 144.0
-offset_top = 64.0
-offset_right = 368.0
-offset_bottom = 123.0
+offset_left = -139.0
+offset_top = 74.0
+offset_right = 85.0
+offset_bottom = 133.0
 text = "0"
 label_settings = SubResource("LabelSettings_38ys3")
-metadata/_edit_use_anchors_ = true
 
 [node name="TimeLabel" type="Label" parent="HUD"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 642.0
-offset_right = 891.0
-offset_bottom = 50.0
-theme_override_fonts/font = ExtResource("38_c6pm6")
-theme_override_font_sizes/font_size = 40
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -39.5
+offset_top = 21.0
+offset_right = 209.5
+offset_bottom = 71.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("16_bjg73")
+theme_override_font_sizes/font_size = 80
 
 [node name="MessageLabel" type="Label" parent="HUD"]
 unique_name_in_owner = true
@@ -318,10 +322,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -478.0
-offset_top = -124.0
-offset_right = 518.0
-offset_bottom = -25.0
+offset_left = -498.0
+offset_top = -49.5
+offset_right = 498.0
+offset_bottom = 49.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
@@ -329,86 +333,6 @@ theme_override_font_sizes/font_size = 50
 text = "ตอบคำถามให้ถูกต้อง เพื่อเก็บไอเทม แล้วเอาชนะเกมนี้!!"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Control" type="Control" parent="."]
-visible = false
-layout_mode = 3
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -640.0
-offset_right = 640.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-script = ExtResource("11_apvpm")
-
-[node name="SettingsButton" type="Button" parent="Control"]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 571.0
-offset_top = 407.0
-offset_right = 736.0
-offset_bottom = 478.0
-theme_override_font_sizes/font_size = 45
-text = "Settings"
-
-[node name="SettingsWindow" type="Window" parent="Control"]
-unique_name_in_owner = true
-scaling_3d_scale = 1.0
-visible = false
-
-[node name="VBoxContainer2" type="Panel" parent="Control"]
-layout_mode = 0
-offset_right = 1284.0
-offset_bottom = 724.0
-
-[node name="CloseButton" type="Button" parent="Control/VBoxContainer2"]
-layout_mode = 0
-offset_left = 601.0
-offset_top = 403.0
-offset_right = 712.0
-offset_bottom = 466.0
-theme_override_font_sizes/font_size = 40
-text = "Close"
-
-[node name="Label" type="Label" parent="Control/VBoxContainer2"]
-layout_mode = 0
-offset_left = 290.0
-offset_top = 170.0
-offset_right = 493.0
-offset_bottom = 212.0
-theme_override_font_sizes/font_size = 30
-text = "Music Volume"
-
-[node name="MusicSlider" type="HSlider" parent="Control/VBoxContainer2"]
-layout_mode = 0
-offset_left = 522.0
-offset_top = 184.0
-offset_right = 530.0
-offset_bottom = 200.0
-min_value = -30.0
-max_value = 0.0
-
-[node name="SFXSlider" type="HSlider" parent="Control/VBoxContainer2"]
-layout_mode = 0
-offset_left = 525.0
-offset_top = 291.0
-offset_right = 533.0
-offset_bottom = 307.0
-min_value = -30.0
-max_value = 0.0
-
-[node name="Label2" type="Label" parent="Control/VBoxContainer2"]
-layout_mode = 0
-offset_left = 297.0
-offset_top = 271.0
-offset_right = 466.0
-offset_bottom = 313.0
-theme_override_font_sizes/font_size = 30
-text = "SFX Volume"
 
 [node name="CanvasLayer5" type="CanvasLayer" parent="."]
 
@@ -418,10 +342,10 @@ z_index = 25
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1058.0
-offset_top = 296.0
-offset_right = 134.0
-offset_bottom = -68.0
+offset_left = 252.0
+offset_top = 354.0
+offset_right = -672.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.493256, 0.504316)
@@ -433,9 +357,11 @@ layer = 0
 
 [node name="TouchControls" type="Control" parent="CanvasLayer4"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("19_vc5cj")
 
 [node name="LeftJoy" type="TextureRect" parent="CanvasLayer4/TouchControls"]
@@ -444,10 +370,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 51.0
-offset_top = 311.0
-offset_right = 407.0
-offset_bottom = 667.0
+offset_left = 121.0
+offset_top = -486.0
+offset_right = 477.0
+offset_bottom = -130.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("20_ty1g6")
@@ -459,24 +385,6 @@ anchors_preset = -1
 offset_right = 150.0
 offset_bottom = 150.0
 texture = ExtResource("21_ty1g6")
-
-[node name="RightJoy" type="TextureRect" parent="CanvasLayer4/TouchControls"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1004.0
-offset_top = 556.0
-offset_right = 1044.0
-offset_bottom = 596.0
-
-[node name="Inner" type="TextureRect" parent="CanvasLayer4/TouchControls/RightJoy"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [node name="LookArea" type="Control" parent="CanvasLayer4"]
 layout_mode = 3
@@ -494,8 +402,8 @@ layer = 0
 [node name="UIRoot" type="Control" parent="CanvasLayer3"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1288.0
-offset_bottom = 724.0
+offset_right = 1930.0
+offset_bottom = 1078.0
 
 [node name="QuizPopup" type="Control" parent="CanvasLayer3/UIRoot"]
 unique_name_in_owner = true
@@ -527,10 +435,10 @@ grow_vertical = 2
 [node name="QuestionLabel" type="Label" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 80.0
-offset_top = 97.0
-offset_right = 1196.0
-offset_bottom = 176.0
+offset_left = 441.0
+offset_top = 155.0
+offset_right = 1557.0
+offset_bottom = 234.0
 theme_override_fonts/font = ExtResource("16_bjg73")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_txyw0")
@@ -541,10 +449,10 @@ autowrap_mode = 3
 [node name="BtnA" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 209.0
-offset_top = 221.0
-offset_right = 1052.0
-offset_bottom = 287.0
+offset_left = 560.0
+offset_top = 326.0
+offset_right = 1403.0
+offset_bottom = 392.0
 theme_override_fonts/font = ExtResource("16_bjg73")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_vc5cj")
@@ -553,10 +461,10 @@ autowrap_mode = 3
 [node name="BtnB" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 213.0
-offset_top = 330.0
-offset_right = 1057.0
-offset_bottom = 402.0
+offset_left = 565.0
+offset_top = 452.0
+offset_right = 1409.0
+offset_bottom = 524.0
 theme_override_fonts/font = ExtResource("16_bjg73")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_nvyfr")
@@ -565,10 +473,10 @@ autowrap_mode = 3
 [node name="BtnC" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 212.0
-offset_top = 432.0
-offset_right = 1055.0
-offset_bottom = 509.0
+offset_left = 563.0
+offset_top = 593.0
+offset_right = 1406.0
+offset_bottom = 670.0
 theme_override_fonts/font = ExtResource("16_bjg73")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_nvyfr")
@@ -576,11 +484,18 @@ autowrap_mode = 3
 
 [node name="BtnD" type="Button" parent="CanvasLayer3/UIRoot/QuizPopup/Panel"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 214.0
-offset_top = 551.0
-offset_right = 1054.0
-offset_bottom = 617.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -410.0
+offset_top = -364.0
+offset_right = 430.0
+offset_bottom = -298.0
+grow_horizontal = 2
+grow_vertical = 0
 theme_override_fonts/font = ExtResource("16_bjg73")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_nvyfr")
@@ -600,8 +515,8 @@ script = ExtResource("24_y6deb")
 layout_mode = 0
 offset_left = -3.0
 offset_top = -3.0
-offset_right = 1284.0
-offset_bottom = 724.0
+offset_right = 1929.0
+offset_bottom = 1086.0
 
 [node name="TitleLabel2" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer"]
 unique_name_in_owner = true
@@ -612,14 +527,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -197.0
-offset_top = -325.0
-offset_right = 126.0
-offset_bottom = -208.0
+offset_left = -183.0
+offset_top = -433.5
+offset_right = 213.0
+offset_bottom = -289.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 90
+theme_override_font_sizes/font_size = 120
 text = "คุณแพ้แล้ว"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -631,29 +546,30 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -187.0
-offset_top = 39.0
-offset_right = 98.0
-offset_bottom = 156.0
+offset_left = -168.0
+offset_top = 118.0
+offset_right = 206.0
+offset_bottom = 262.0
 grow_horizontal = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 10
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 90
+theme_override_font_sizes/font_size = 120
 text = "ชนะแล้ว!!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RestartButton" type="Button" parent="CanvasLayer/WinPopup/VBoxContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 0
-offset_left = 362.0
-offset_top = 521.0
-offset_right = 527.0
-offset_bottom = 592.0
+offset_left = 1374.0
+offset_top = 830.0
+offset_right = 1604.0
+offset_bottom = 946.0
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 90
 text = "เล่นใหม่"
 
 [node name="QuitButton" type="Button" parent="CanvasLayer/WinPopup/VBoxContainer"]
@@ -664,15 +580,26 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 174.0
-offset_top = 156.0
-offset_right = 302.0
-offset_bottom = 227.0
+offset_left = -522.0
+offset_top = 286.5
+offset_right = -293.0
+offset_bottom = 402.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 90
 text = "ออกเกม"
+
+[node name="NextLevelButton" type="Button" parent="CanvasLayer/WinPopup/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1307.0
+offset_top = 819.0
+offset_right = 1675.0
+offset_bottom = 951.0
+theme_override_fonts/font = ExtResource("16_bjg73")
+theme_override_font_sizes/font_size = 90
+text = "ด่านต่อไป"
 
 [node name="HBoxCorrect" type="HBoxContainer" parent="CanvasLayer/WinPopup/VBoxContainer"]
 unique_name_in_owner = true
@@ -680,10 +607,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -94.0
-offset_top = 169.0
-offset_right = 45.0
-offset_bottom = 234.0
+offset_left = -135.0
+offset_top = 300.0
+offset_right = 169.0
+offset_bottom = 408.0
 grow_horizontal = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxCorrect"]
@@ -691,60 +618,60 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
-text = "ตอบถูก "
+theme_override_font_sizes/font_size = 90
+text = "ตอบถูก"
 
 [node name="CorrectValue" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxCorrect"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 90
 
 [node name="HBoxTotal" type="HBoxContainer" parent="CanvasLayer/WinPopup/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 492.0
-offset_top = 289.0
-offset_right = 692.0
-offset_bottom = 354.0
+offset_left = 792.0
+offset_top = 493.0
+offset_right = 1198.0
+offset_bottom = 601.0
 
 [node name="Label" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxTotal"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
-text = "จากทั้งหมด "
+theme_override_font_sizes/font_size = 90
+text = "จากทั้งหมด"
 
 [node name="TotalValue" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxTotal"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 90
 
 [node name="HBoxPercent" type="HBoxContainer" parent="CanvasLayer/WinPopup/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 523.0
-offset_top = 425.0
-offset_right = 718.0
-offset_bottom = 490.0
+offset_left = 795.0
+offset_top = 664.0
+offset_right = 1218.0
+offset_bottom = 772.0
 
 [node name="Label" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxPercent"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 90
 text = "Percen "
 
 [node name="PercentValue" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxPercent"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 90
 
 [node name="Label2" type="Label" parent="CanvasLayer/WinPopup/VBoxContainer/HBoxPercent"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 90
 text = "%"
 
 [node name="WinSound" type="AudioStreamPlayer3D" parent="CanvasLayer/WinPopup"]
@@ -759,16 +686,16 @@ stream = ExtResource("20_0loja")
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1934.0
+offset_bottom = 1087.0
 script = ExtResource("20_bjg73")
 
 [node name="Panel" type="Panel" parent="CanvasLayer2/TutorialPopup"]
 layout_mode = 0
 offset_left = -4.0
 offset_top = -5.0
-offset_right = 1286.0
-offset_bottom = 726.0
+offset_right = 1931.0
+offset_bottom = 1088.0
 
 [node name="data" type="Label" parent="CanvasLayer2/TutorialPopup/Panel"]
 layout_mode = 1
@@ -786,29 +713,34 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 10
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 80
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="BtnNext" type="Button" parent="CanvasLayer2/TutorialPopup/Panel"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.319481
+anchor_top = 0.0157993
+anchor_right = 0.319481
+anchor_bottom = 0.0157993
 offset_left = 1105.0
 offset_top = 4.0
 offset_right = 1270.0
 offset_bottom = 75.0
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 90
 text = "ถัดไป"
 metadata/_edit_use_anchors_ = true
 
 [node name="BtnExit" type="Button" parent="CanvasLayer2/TutorialPopup/Panel"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+anchors_preset = -1
+anchor_left = 0.628424
+anchor_top = 0.352242
+anchor_right = 0.668217
+anchor_bottom = 0.393413
 offset_left = 486.0
 offset_top = -361.0
 offset_right = 614.0
@@ -816,7 +748,7 @@ offset_bottom = -290.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("16_bjg73")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 90
 text = "เริ่มเลย"
 metadata/_edit_use_anchors_ = true
 
@@ -824,8 +756,8 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 0
 offset_left = 34.0
 offset_top = 33.0
-offset_right = 74.0
-offset_bottom = 73.0
+offset_right = 90.0
+offset_bottom = 89.0
 scale = Vector2(0.3, 0.3)
 stretch_mode = 5
 
@@ -1023,48 +955,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.451591, 0.379087, 4.55488)
 [node name="Pallet7" parent="Pallet/Pallet7" instance=ExtResource("6_0ld40")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.451591, 0.379087, 5.75014)
 
-[node name="Pallet8" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.78729, 0.453007, 0.216106)
-
-[node name="Pallet9" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.78729, 0.453007, 3.5222)
-
-[node name="Pallet10" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1762, 0.453007, 5.31024)
-
-[node name="Pallet12" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4212, 0.453007, -0.330776)
-
-[node name="Pallet13" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4212, 1.03184, 3.43106)
-
-[node name="Pallet14" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.8801, 1.41076, 5.3956)
-
-[node name="Pallet15" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4973, 2.07049, 5.3956)
-
-[node name="Pallet16" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8372, 2.09841, 5.1616)
-
-[node name="Pallet17" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8372, 2.09841, 0.929987)
-
-[node name="Pallet18" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.641, 2.99741, 0.929987)
-
-[node name="Pallet19" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.4664, 3.95936, 3.78179)
-
-[node name="Pallet20" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.1284, 3.95936, 3.78179)
-
-[node name="Pallet21" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.1284, 4.42448, 3.78179)
-
-[node name="Pallet22" type="Node3D" parent="Pallet"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.0988, 4.42448, 3.78179)
-
 [node name="cloud" type="Node3D" parent="."]
 
 [node name="cube" parent="cloud" instance=ExtResource("13_drtpy")]
@@ -1072,19 +962,6 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -33.4442, 10.3687, -17.9376)
 
 [node name="cube2" parent="cloud" instance=ExtResource("13_drtpy")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -33.4442, 9.22808, -10.8717)
-
-[node name="grave_1" type="Node3D" parent="."]
-
-[node name="coffin2" type="Node3D" parent="."]
-
-[node name="Node3D7" type="Node3D" parent="."]
-
-[node name="haunted" type="Node3D" parent="."]
-
-[node name="Fance" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.3534, 16.517, 12.9954)
-
-[node name="creepy" type="Node3D" parent="."]
 
 [node name="chackpoint" type="Node3D" parent="."]
 
@@ -1367,33 +1244,18 @@ transform = Transform3D(-0.00402887, 0, 0.0999188, 0, 0.1, 0, -0.0999188, 0, -0.
 transform = Transform3D(-0.0585651, 0, 0.0810563, 0, 0.1, 0, -0.0810563, 0, -0.0585651, -3.187, 0.492429, 0.906977)
 
 [node name="coin1" parent="." instance=ExtResource("10_fwhys")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.431144, 3.72098, 13.9622)
-
-[node name="coin2" parent="." instance=ExtResource("10_fwhys")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.644342, 0.49227, -0.986189)
-
-[node name="coin3" parent="." instance=ExtResource("10_fwhys")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.88146, 0.49227, -6.06807)
 
-[node name="coin4" parent="." instance=ExtResource("10_fwhys")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.98474, 2.73276, 16.1235)
-
-[node name="coin5" parent="." instance=ExtResource("10_fwhys")]
+[node name="coin2" parent="." instance=ExtResource("10_fwhys")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.244706, 3.82363, 18.1908)
 
-[node name="coin6" parent="." instance=ExtResource("10_fwhys")]
+[node name="coin3" parent="." instance=ExtResource("10_fwhys")]
 transform = Transform3D(-0.460649, 0, -0.887582, 0, 1, 0, 0.887582, 0, -0.460649, -23.3936, 4.81282, 15.7617)
 
-[node name="coin7" parent="." instance=ExtResource("10_fwhys")]
-transform = Transform3D(-0.460649, 0, -0.887582, 0, 1, 0, 0.887582, 0, -0.460649, -21.5346, 6.33135, 0.445596)
-
-[node name="coin8" parent="." instance=ExtResource("10_fwhys")]
+[node name="coin4" parent="." instance=ExtResource("10_fwhys")]
 transform = Transform3D(-0.45381, 0.171671, -0.874406, 0.0790802, 0.985154, 0.152372, 0.887582, 0, -0.460649, -19.5556, 8.12942, -8.41412)
 
-[node name="coin9" parent="." instance=ExtResource("10_fwhys")]
-transform = Transform3D(-0.45381, 0.171671, -0.874406, 0.0790802, 0.985154, 0.152372, 0.887582, 0, -0.460649, -40.2003, 13.3675, -4.78952)
-
-[node name="coin10" parent="." instance=ExtResource("10_fwhys")]
+[node name="coin5" parent="." instance=ExtResource("10_fwhys")]
 transform = Transform3D(-0.45381, 0.171671, -0.874406, 0.0790802, 0.985154, 0.152372, 0.887582, 0, -0.460649, -44.0132, 13.3675, -10.3766)
 
 [node name="Grass Platform2" parent="." instance=ExtResource("40_5poiv")]

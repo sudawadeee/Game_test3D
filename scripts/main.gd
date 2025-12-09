@@ -1,6 +1,11 @@
 # Main.gd
 extends Node3D
 
+# ==========================================================
+# 🔴 ส่วนที่เพิ่มใหม่: ระบุ ID ของด่าน (ต้องตรงกับใน JSON)
+# ==========================================================
+@export var level_id: String = "level1" 
+
 @export var level_time: float = 200  
 @export var warning_time: float = 15
 
@@ -24,7 +29,14 @@ func free_mouse():
 
 
 func _ready() -> void:
+	# 🔴 ส่วนที่เพิ่มใหม่: บอก QuestionManager ว่าให้โหลดคำถามของด่านนี้
+	if QuestionManager:
+		QuestionManager.set_level_data(level_id)
+	else:
+		push_error("❌ QuestionManager not found! Make sure it is an Autoload.")
+
 	_timer.process_mode = Node.PROCESS_MODE_ALWAYS
+	
 	# เริ่ม BGM
 	if not bgm.playing:
 		bgm.play()
@@ -77,7 +89,7 @@ func _process(delta: float) -> void:
 
 		# ใกล้หมดเวลาแล้ว
 		if not _message_shown and _timer.time_left <= warning_time:
-			_show_message("Find the flag to win!")  # ถ้าไม่อยากมี text ในโค้ด เดี๋ยวคุยต่อได้
+			_show_message("Find the flag to win!") 
 
 
 # ---------------------------
