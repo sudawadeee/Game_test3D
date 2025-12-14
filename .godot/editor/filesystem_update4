@@ -4,8 +4,7 @@ res://scenes/main.gdshader
 res://opject_new/banana.gd
 res://MODEL03/floor.gdshader
 res://scenes/WinPopup.gd
-res://scenes/touch_controls.gd
-res://scenes/jump_button.gd
+res://scenes/tutorial_popup.gd
 res://scenes/Level2.tscn
 res://scenes/Level3.tscn
 res://scenes/Level4.tscn
